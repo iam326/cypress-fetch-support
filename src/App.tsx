@@ -14,7 +14,7 @@ const App: FC = () => {
   };
 
   useEffect(() => {
-    fetch('http://localhost:3001/employees')
+    fetch(`http://localhost:3001/employees?d=${Date.now()}`)
       .then((response) => response.json())
       .then((data) => setEmployees(data));
   }, []);
@@ -22,10 +22,10 @@ const App: FC = () => {
   return (
     <div className="App">
       <h3>Employees</h3>
-      <ul>
+      <ul id="employees">
         {employees.map((employee) => (
           <li key={employee.id} style={listStyle}>
-            {employee.name} ({employee.age})
+            {employee.name}
           </li>
         ))}
       </ul>
