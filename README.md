@@ -1,6 +1,6 @@
 # cypress-fetch-support
 
-Cypress v6 から `experimentalNetworkStubbing` オプションをわざわざ設定せずに、fetch を監視できるようになった
+Cypress v6 からデフォルトで fetch を監視できるようになった。`experimentalNetworkStubbing` オプションは削除された。
 
 ## Environment
 
