@@ -14,7 +14,7 @@ const App: FC = () => {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:3001/employees?d=${Date.now()}`)
+    fetch('http://localhost:3001/employees')
       .then((response) => response.json())
       .then((data) => setEmployees(data));
   }, []);
