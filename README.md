@@ -25,6 +25,21 @@ cypress@6.0.1
 
 ```
 $ yarn json-server
+...
+
 $ yarn start
-$ yarn cy:open or yarn cy:run
+...
+
+$ yarn cy:run
+...
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✔  sample_spec.js                           368ms        1        1        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✔  All specs passed!                        368ms        1        1        -        -        -  
+
 ```
